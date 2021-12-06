@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
+    app: {{.Values.image.name}}
     tag: {{.Values.image.tag}}
   name: {{.Values.image.repository}}
   namespace: {{.Values.namespace}}
