@@ -1,9 +1,23 @@
 namespace:
-  name: test
+  name: demo
  
 image:
-  repository: pixelpotato/python-helloworld 
-  tag: v1.0.0
+  repository: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
+
+resources:
+   requests:
+      cpu:50m
+      mmemory:256Mi
 
 replicaCount: 3
 
+service:
+   type:
+     ClusterIP
+   port: 8111
+
+configMap:
+   data:
+     versionn: alpine

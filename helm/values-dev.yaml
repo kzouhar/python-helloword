@@ -11,7 +11,7 @@ resources:
       cpu:70m
       mmemory:256Mi
 
-replicaCount: 3
+replicaCount: 5
 
 configMap:
   data:

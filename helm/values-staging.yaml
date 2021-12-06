@@ -1,9 +1,9 @@
 namespace:
-  name: demo
+  name: staging
 
 image:
   repository: nginx
-  tag: 1.17.0
+  tag: 1.18.0
   pullPolicy: IfNotPresent
 
 resources:
@@ -11,11 +11,9 @@ resources:
       cpu:70m
       mmemory:256Mi
 
-replicaCount: 3
+replicaCount: 1
 
 configMap:
   data:
-     version: 1.17.0
+     version: 1.18.0
 
-service:
-   port: 80
