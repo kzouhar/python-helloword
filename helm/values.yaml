@@ -1,5 +1,4 @@
-namespace:
-  name: dev
+namespace: dev
  
 image:
   repository: nginx
