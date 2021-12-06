@@ -1,10 +1,11 @@
 namespace:
-  name: demo
+  name: dev
  
 image:
   repository: nginx
   tag: alpine
   pullPolicy: IfNotPresent
+  name: nginx-helm-app
 
 resources:
    requests:
