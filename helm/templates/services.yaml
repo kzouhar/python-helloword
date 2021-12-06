@@ -3,9 +3,9 @@ kind: Service
 metadata:
   labels:
     app: nginx
-    tag: alpine
-  name: nginx-alpine
-  namespace: demo
+    tag: {{.Values.image.tag}}
+  name: {{.Values.image.repository}}
+  namespace: {{.Values.namespace}}
 spec:
   ports:
   - port: {{.Values.service.port}}
